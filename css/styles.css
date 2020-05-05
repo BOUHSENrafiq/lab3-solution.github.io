@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+.row{
+    width: 20cm;
+}
+body{
+    background: white;
+}
+img{
+    margin: 0;
+    height:auto;
+    width:25%;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.col-sm-12{
+    text-align: center;
+}
+p{
+    text-align: left;
+}
+span{
+    width: 2cm;
+}
+.col-sm-6{
+    text-align: justify;
+    padding: 0;
+}
+.list-group-item{
+    border: none;
+    text-align: justify;
+    height:auto;
+    padding: 0;
+}
+
+#para0{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    text-justify: auto;
+}
+.cv_profile{
+    text-align: center;
+}
+.bold{
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: blue;
+    text-align: center;
+}
+#infos{
+    width: border-box;
+    height: border-box;
+    display: flex;
+    margin: 0px auto;
+    float: left;
+}
+.cv .cv_left{
+    width: 30%;
+    background: #bfacac;
+    padding-top: 8px;
+    float: left;
+}
+.cv .cv_left .cv_content{
+    padding: 0 25px;
+}
+.skill_name{
+    margin: 0;
+    color: green;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline solid rgb(68, 68, 68);
+}
+.list-group-item{
+    color: black;
+    text-align: justify;
+}
+.parag{
+    margin: 0;
+    color: black;
+    text-justify: auto;
+    text-align: justify;
+}
+.cv .cv_left ul li{
+    display: list-item;
+    align-items: center;
+    text-align: justify;
+}
+.cv .cv_right {
+    width: 70%;
+    background: #e7bfbf;
+    padding:0px 25px;
+    float: left;
+}
+.date{
+    font-weight: 700;
+    color: #8f2392;
+}
+.cv .cv_right ul li{
+    display: list-item;
+    align-items: center;
+    text-align: justify;
+}
+/* When the width is between 600px and 900px - change the appearance of .cv */
+@media screen and (min-width: 600px) and (max-width: 900px){
+    .cv{
+        flex-direction: column;
+        border: 1px solid black;
+    }
+    .cv .cv_left, .cv .cv_right{
+        width: auto;
+    }
+}
