@@ -11,6 +11,7 @@ body{
 }
 .row{
     margin: auto;
+    padding: initial;
 }
 header{
     height: auto;
@@ -78,7 +79,7 @@ dl, dd{
     font-weight: 700;
     color: #8f2392;
 }
-@media screen and (min-width: 150px) and (max-width: 700px) {
+@media screen and (min-width: 100px) and (max-width: 700px) {
     body{
         background: white;
     }
@@ -88,6 +89,7 @@ dl, dd{
         padding: 0;
         width: 600px;
         height: auto;
+        text-align: justify;
     }
     img{
         display: none
