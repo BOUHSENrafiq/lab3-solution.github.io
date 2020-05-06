@@ -87,6 +87,7 @@ dl, dd{
         background: #ffffff;
         padding: 0;
         width: 600px;
+        height: auto;
     }
     img{
         display: none
@@ -100,8 +101,6 @@ dl, dd{
         padding:0 ;
         float: left;
     }
-    header{
-        height: auto;
-    }
+
 }
 
