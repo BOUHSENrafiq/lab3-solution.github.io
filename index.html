@@ -1,10 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -12,252 +11,300 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <title>Boostrap CV</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="node_modules\bootstrap\dist\css\bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css\styles.css">
 </head>
 <body>
-<div id="infos" class="container">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="col-sm-6">
-                <div class="col-sm-12">
-                    <img src="ressources/images/rafiqBouhsen.jpg" alt="img_profile">
-                </div>
-                <div class="col-sm-12">
-                    <p id="para0" class="cv_name">RAFIQ BOUHSEN<br>Développeur java</p>
-                </div>
-                <div class="col-sm-12">
+<div id="infos" class="container-fluid">
+    <!-- Entête de la page contient la photo du profile, nom, prénom et poste -->
+    <header class="row">
+        <div id="img" class="col-xs-6">
+            <img src="ressources/images/rafiqBouhsen.jpg" alt="img_profile">
+        </div>
+        <div class="col-6">
+            <p class="cv_name">RAFIQ BOUHSEN<br>Développeur java</p>
+        </div>
+    </header>
+    <section class="row">
+        <!-- col gauche-->
+        <div class="col-6">
+            <div class="row">
+                <div class="col-12">
                     <p class="bold">INFORMATIONS PERSONELLES</p>
                 </div>
-                <div>
+                <div class="col-12">
                     <p>Célibataire, 31 ans.</br>
-                        <span class="badge badge-primary badge-pill">Adresse</span>Résidence Marhaba1, Imm A9 App 131, cité Dakhla, Agadir – Maroc.</br>
-                        <span class="badge badge-primary badge-pill">E-mail</span><a href="mailto:bouhsenrafiq@gmail.com">bouhsenrafiq@gmail.com</a></br>
+                        <span class="badge badge-primary badge-pill">Adresse</span>Résidence Marhaba1, Imm A9 App 131,
+                        cité Dakhla, Agadir – Maroc.</br>
+                        <span class="badge badge-primary badge-pill">E-mail</span><a
+                                href="mailto:bouhsenrafiq@gmail.com">bouhsenrafiq@gmail.com</a></br>
                         <span class="badge badge-primary badge-pill">Tél</span>(+212)6.13.74.79.44</br>
                         <span class="badge badge-primary badge-pill ">Skype</span>rafiq.19</br>
                         <span class="badge badge-primary badge-pill">Mobilité</span>Nationale et Internationale.
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="col-sm-6">
-                    <p class="bold">COMPETENCES</p>
+            <div class="row">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="bold">COMPETENCES</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="skill_name">MANAGEMENT: Certifié en;</p>
+                    </div>
+                    <div class="col-12">
+                        <ul class="list-unstyled">
+                            <li class="list-group-item">Management de projet agile avec Scrum.</li>
+                            <li class="list-group-item">Management d’équipe projet.</li>
+                            <li class="list-group-item">Préparation pour la certification PMI professionnel.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <p class="skill_name">MANAGEMENT: Certifié en;</p>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="skill_name">IT:</p>
+                    </div>
+                    <dl class="row">
+                        <dt class="col-6">•Outils de management de projet:</dt>
+                        <dd class="col-6">Scoro, MS Project.</dd>
+
+                        <dt class="col-6">•Langages de programmation:</dt>
+                        <dd class="col-6">Java, Jakarta EE, JS, C/C++, ladder.</dd>
+
+                        <dt class="col-6">•Framework:</dt>
+                        <dd class="col-6">JSF, JPA, Spring Boot, JQuery, JUnit, Thymeleaf, Angular...</dd>
+
+                        <dt class="col-6">•Serveurs:</dt>
+                        <dd class="col-6">Tomcat, GlassFish.</dd>
+
+                        <dt class="col-6">•Markup languages:</dt>
+                        <dd class="col-6">HTML, XML.</dd>
+
+                        <dt class="col-6">•Styling language:</dt>
+                        <dd class="col-6">CSS.</dd>
+
+                        <dt class="col-6">•Logiciels de développement:</dt>
+                        <dd class="col-6">IntelliJ,WebStorm, Eclipse, Dev-C++.</dd>
+
+                        <dt class="col-6">•Outil de coordination:</dt>
+                        <dd class="col-6">Git / github.</dd>
+
+                        <dt class="col-6">•Système de gestion de base de données:</dt>
+                        <dd class="col-6">MySQL, MariaDB, Data Grip.</dd>
+
+                        <dt class="col-6">•Outils de modélisation:</dt>
+                        <dd class="col-6"> PowerDesigner, UML.</dd>
+
+                        <dt class="col-6">•Logiciel d’automatisation:</dt>
+                        <dd class="col-6">WinCC, STEP 7 PLC, SIMATIC PCS7, Unity Pro XL, Vijeo Citect.</dd>
+
+                        <dt class="col-6">•Logiciel de simulation:</dt>
+                        <dd class="col-6">Matlab/Simulink, LabVIEW, Packet Tracer, Flux2d.</dd>
+                    </dl>
                 </div>
-                <ul class="list-unstyled">
-                    <li class="list-group-item">Management de projet agile avec Scrum.</li>
-                    <li class="list-group-item">Management d’équipe projet.</li>
-                    <li class="list-group-item">Préparation pour la certification PMI professionnel.</li>
-                </ul>
-                <div class="col-sm-6">
-                    <p class="skill_name">IT:</p>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="skill_name">langues:</p>
+                    </div>
+                    <dl class="row">
+                        <dt class="col-6">•Arabe:</dt>
+                        <dd class="col-6">
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"
+                                     aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Maternelle
+                                </div>
+                            </div>
+                        </dd>
+                        <dt class="col-6">•Français:</dt>
+                        <dd class="col-6">
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 84%;"
+                                     aria-valuenow="84" aria-valuemin="0" aria-valuemax="100">C1
+                                </div>
+                            </div>
+                        </dd>
+                        <dt class="col-6">•Anglais:</dt>
+                        <dd class="col-6">
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 67%;"
+                                     aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">B2
+                                </div>
+                            </div>
+                        </dd>
+                        <dt class="col-6">•Espagnol:</dt>
+                        <dd class="col-6">
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 17%;"
+                                     aria-valuenow="17" aria-valuemin="0" aria-valuemax="100">A1
+                                </div>
+                            </div>
+                        </dd>
+                        <dt class="col-6">•Dutch:</dt>
+                        <dd class="col-6">
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 17%;"
+                                     aria-valuenow="17" aria-valuemin="0" aria-valuemax="100">A1
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
                 </div>
-                <dl class="row">
-                    <dt class="col-sm-6">•Outils de management de projet:</dt>
-                    <dd class="col-sm-6">Scoro, MS Project.</dd>
-
-                    <dt class="col-sm-6">•Langages de programmation:</dt>
-                    <dd class="col-sm-6">Java, Jakarta EE, JavaScript, C/C++, ladder.</dd>
-
-                    <dt class="col-sm-6">•Framework:</dt>
-                    <dd class="col-sm-6">JSF, JPA, Spring Boot, JQuery, JUnit, Thymeleaf, Angular...</dd>
-
-                    <dt class="col-sm-6">•Serveurs:</dt>
-                    <dd class="col-sm-6">Tomcat, GlassFish.</dd>
-
-                    <dt class="col-sm-6">•Markup languages:</dt>
-                    <dd class="col-sm-6">HTML, XML.</dd>
-
-                    <dt class="col-sm-6">•Styling language:</dt>
-                    <dd class="col-sm-6">CSS.</dd>
-
-                    <dt class="col-sm-6">•Logiciels de développement:</dt>
-                    <dd class="col-sm-6">IntelliJ,WebStorm, Eclipse, Dev-C++.</dd>
-
-                    <dt class="col-sm-6">•Outil de coordination:</dt>
-                    <dd class="col-sm-6">Git / github.</dd>
-
-                    <dt class="col-sm-6">•Système de gestion de base de données:</dt>
-                    <dd class="col-sm-6">MySQL, MariaDB, Data Grip.</dd>
-
-                    <dt class="col-sm-6">•Outils de modélisation:</dt>
-                    <dd class="col-sm-6"> PowerDesigner, UML.</dd>
-                    <dt class="col-sm-6">•Logiciel d’automatisation:</dt>
-                    <dd class="col-sm-6">WinCC, STEP 7 PLC, SIMATIC PCS7, Unity Pro XL, Vijeo Citect.</dd>
-
-                    <dt class="col-sm-6">•Logiciel de simulation:</dt>
-                    <dd class="col-sm-6">Matlab/Simulink, LabVIEW, Packet Tracer, Flux2d.</dd>
-                </dl>
-                <div class="col-sm-6">
-                    <p class="skill_name">langues:</p>
-                </div>
-                <dl class="row">
-                    <dt class="col-sm-6">•Arabe:</dt>
-                    <dd class="col-sm-6">
-                        <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Maternelle</div>
-                        </div>
-                    </dd>
-                    <dt class="col-sm-6">•Français:</dt>
-                    <dd class="col-sm-6">
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 84%;" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100">TCF/TP C1</div>
-                        </div>
-                    </dd>
-                    <dt class="col-sm-6">•Anglais:</dt>
-                    <dd class="col-sm-6">
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 67%;" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">TOIEC & BULATS B2</div>
-                        </div>
-                    </dd>
-                    <dt class="col-sm-6">•Espagnol:</dt>
-                    <dd class="col-sm-6">
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 20%;" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100">Niveau A1</div>
-                        </div>
-                    </dd>
-                    <dt class="col-sm-6">•Dutch:</dt>
-                    <dd class="col-sm-6">
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 20%;" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100">Niveau A1</div>
-                        </div>
-                    </dd>
-                </dl>
             </div>
-            <div class="col-sm-6">
-                <p class="bold">AUTRES</p>
-            </div>
-            <div class="col-sm-6">
-                <ul class="list-unstyled">
-                    <li class="list-group-item">Certification MOS 2016.</li>
-                    <li class="list-group-item">Talk: The impact of travel on learning, 2019, AMIDEAST Laâyoune Learning Center,
-                        Laâyoune, Maroc.</li>
-                    <li class="list-group-item">Loisirs: Voyages, Scrabble, Monopoly.</li>
-                    <li class="list-group-item">Permis de conduire: B.</li>
-                </ul>
+            <div class="row">
+                <div class="col-12">
+                    <p class="bold">AUTRES</p>
+                </div>
+                <div class="col-12">
+                    <ul class="list-unstyled">
+                        <li class="list-group-item">Certification MOS 2016.</li>
+                        <li class="list-group-item">Talk: The impact of travel on learning, 2019, AMIDEAST Laâyoune
+                            Learning Center, Laâyoune, Maroc.
+                        </li>
+                        <li class="list-group-item">Loisirs: Voyages, Scrabble, Monopoly.</li>
+                        <li class="list-group-item">Permis de conduire: B.</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="cv_item cv_qualification">
-            <div class="col-sm-6">
-                <p class="bold">FORMATIONS ACADEMIQUES</p>
+        <!-- col droite-->
+        <div class="col-6">
+            <div class="row">
+                <div class="col-12">
+                    <p class="bold">FORMATIONS ACADEMIQUES</p>
+                </div>
+                <div class="col-12">
+                    <dl class="row">
+                        <dt class="col-4">
+                            <div class="date">2015 – 2017:</div>
+                        </dt>
+                        <dd class="col-8">
+                            <div class="info">
+                                <p class="semi-bold">Master en Energie Electrique de l’Université de Technologie de
+                                    Belfort-Montbéliard.<br>Belfort (France).</p>
+                            </div>
+                        </dd>
+                        <dt class="col-4">
+                            <div class="date">2010 – 2013:</div>
+                        </dt>
+                        <dd class="col-8">
+                            <div class="info">
+                                <p class="semi-bold">Diplôme d’ingénieur en Génie Electronique et Télécommunications de
+                                    l’Académie Internationale Mohamed VI de l’Aviation Civile.<br>Casablanca (Maroc).
+                                </p>
+                            </div>
+                        </dd>
+                        <dt class="col-4">
+                            <div class="date">2007 – 2010:</div>
+                        </dt>
+                        <dd class="col-8">
+                            <div class="info">
+                                <p class="semi-bold">Classes Préparatoires aux Grandes Ecoles d’Ingénieurs PCSI/PSI,
+                                    Attestation d’admissibilité au
+                                    CNC2010.<br>Marrakech (Maroc).</p>
+                            </div>
+                        </dd>
+                        <dt class="col-4">
+                            <div class="date">Juin 2007:</div>
+                        </dt>
+                        <dd class="col-8">
+                            <div class="info">
+                                <p class="semi-bold">Baccalauréat Sciences Expérimentales.<br>Laâyoune (Maroc).</p>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
             </div>
-            <ul>
-                <li>
-                    <div class="date">2015 – 2017:</div>
-                    <div class="info">
-                        <p class="semi-bold">Master en Energie Electrique de l’Université de Technologie de
-                            Belfort-Montbéliard, Belfort
-                            (France).</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="date">2010 – 2013:</div>
-                    <div class="info">
-                        <p class="semi-bold">Diplôme d’ingénieur en Génie Electronique et Télécommunications de
-                            l’Académie
-                            Internationale
-                            Mohamed VI de l’Aviation Civile, Casablanca (Maroc).</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="date">2007 – 2010:</div>
-                    <div class="info">
-                        <p class="semi-bold">Classes Préparatoires aux Grandes Ecoles d’Ingénieurs PCSI/PSI, Attestation
-                            d’admissibilité au
-                            CNC2010, Marrakech (Maroc).</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="date">Juin 2007:</div>
-                    <div class="info">
-                        <p class="semi-bold">Baccalauréat Sciences Expérimentales, Laâyoune (Maroc).
-                        </p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="cv_item cv_proqualification">
-            <div class="title">
-                <p class="bold">FORMATIONS PROFESIONNELLES</p>
+            <div class="row">
+                <div class="col-12">
+                    <p class="bold">FORMATIONS PROFESIONNELLES</p>
+                </div>
+                <div class="col-12">
+                    <ul>
+                        <li>
+                            <div class="date">Novembre 2019 – Aujourd’hui:</div>
+                            <div class="info">
+                                <p class="semi-bold">Formation en JAVA, ENABEL Belgian Development Agency.<br> Agadir
+                                    (Maroc).</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">Septembre – Novembre 2019:</div>
+                            <div class="info">
+                                <p class="semi-bold">Certification en Gestion de Projets, MOOC de l’Ecole Centrale
+                                    Lille.<br> Lille
+                                    (France).</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">Janvier – Mars 2019 :</div>
+                            <div class="info">
+                                <p class="semi-bold">Formation en soft skills à AMIDEAST LAAYOUNE LEARNING CENTER.<br>
+                                    Laâyoune (Maroc).</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li>
-                    <div class="date">Novembre 2019 – Aujourd’hui:</div>
-                    <div class="info">
-                        <p class="semi-bold">Formation en JAVA, ENABEL Belgian Development Agency, Agadir
-                            (Maroc).</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="date">Septembre – Novembre 2019:</div>
-                    <div class="info">
-                        <p class="semi-bold">Certification en Gestion de Projets, MOOC de l’Ecole Centrale
-                            Lille, Lille
-                            (France).</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="date">Janvier – Mars 2019 :</div>
-                    <div class="info">
-                        <p class="semi-bold">Formation en soft skills à AMIDEAST LAAYOUNE LEARNING CENTER,
-                            Laâyoune (Maroc).</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="cv_item cv_proexp">
-            <div class="title">
-                <p class="bold">EXPERIENCES PROFESSIONNELLES</p>
-            </div>
-            <ul>
-                <li>
-                    <div class="date">Février – Juin 2019:</div>
-                    <div class="info">
-                        <p class="semi-bold">Intervenant à l’Ecole Supérieure de Technologie LAAYOUNE (Unité de
-                            valeur: Gestion de la maintenance, Filière: Agroalimentaire), Laâyoune.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="date">Septembre 2016 - Février 2017:</div>
-                    <div class="info">
-                        <p class="semi-bold">Stage PFE «Relatif au Diplôme de Master» à l’usine des
-                            engrais - Jorf Lasfar</p>
-                        <p class="tache">Collecter, Analyser, et trier les données statistiques.</p>
-                        <p class="tache">Assurer le reporting et la coordination entre les parties-prenantes.</p>
-                        <p class="tache">Piloter les interventions sur le terrain et Assurer la maintenance
-                            corrective.</p>
-                        <p class="tache">Proposer une politique de maintenance des équipements des nouvelles lignes de
-                            production.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="date">Mars – Juin 2013:</div>
-                    <div class="info">
-                        <p class="tache">Stage PFE à L’usine de traitement « Relatif au Diplôme d’Ingénieur d’Etat
-                            » – Boucraâ</p>
-                        <p class="tache">Réaliser un système de supervision et de Contrôle/Commande du réseau de
-                            distribution
-                            électrique 30/6 kV.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="date">Juillet – Août 2012:</div>
-                    <div class="info">
-                        <p class="semi-bold">Stage technique au Port de Casablanca, Direction des Embarquements –
-                            Casablanca</p>
-                        <p class="tache">Mettre en place un système d’ouverture et de fermeture des portiques commandés
-                            par une page
-                            HTML.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
 
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="bold">EXPERIENCES PROFESSIONNELLES</p>
+                </div>
+                <div class="col-12">
+                    <ul>
+                        <li>
+                            <div class="date">Février – Juin 2019:</div>
+                            <div class="info">
+                                <p class="semi-bold">Intervenant à l’Ecole Supérieure de Technologie LAAYOUNE (Unité de
+                                    valeur: Gestion de la maintenance, Filière: Agroalimentaire), Laâyoune.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">Septembre 2016 - Février 2017:</div>
+                            <div class="info">
+                                <p class="semi-bold">Stage PFE «Relatif au Diplôme de Master» à l’usine des
+                                    engrais - Jorf Lasfar</p>
+                                <p class="tache">Collecter, Analyser, et trier les données statistiques.<br>
+                                    Assurer le reporting et la coordination entre les
+                                    parties-prenantes.<br>
+                                    Piloter les interventions sur le terrain et Assurer la maintenance
+                                    corrective.<br>
+                                    Proposer une politique de maintenance des équipements des nouvelles lignes de
+                                    production.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">Mars – Juin 2013:</div>
+                            <div class="info">
+                                <p class="tache">Stage PFE à L’usine de traitement « Relatif au Diplôme d’Ingénieur
+                                    d’Etat
+                                    » – Boucraâ</p>
+                                <p class="tache">Réaliser un système de supervision et de Contrôle / Commande du réseau
+                                    de distribution électrique 30/6 kV.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">Juillet – Août 2012:</div>
+                            <div class="info">
+                                <p class="semi-bold">Stage technique au Port de Casablanca, Direction des Embarquements
+                                    –
+                                    Casablanca</p>
+                                <p class="tache">Mettre en place un système d’ouverture et de fermeture des portiques
+                                    commandés
+                                    par une page
+                                    HTML.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
+<script src="node_modules\jquery\dist\jquery.js" type="text/javascript"></script>
+<script src="node_modules\bootstrap\dist\js\bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>
